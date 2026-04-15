@@ -1,0 +1,119 @@
+:root {
+  font-family: Arial;
+  --backround-filtros: rgb(229, 184, 164);
+  --bordes-filtros: rgb(220, 158, 130);
+  --color1: rgb(235, 94, 165);
+  --color2: rgb(235 94 94);
+  --color3: rgb(220, 158, 130);
+  --color4: rgb(41, 47, 54);
+  --color5: rgb(94, 164, 235);
+  --color6: rgb(247, 255, 247);
+}
+
+body {
+  display: grid;
+  margin: 0;
+  grid-template-columns: minmax(10px, 0.5fr) 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header nav"
+    "aside main main"
+    "footer footer footer";
+  min-height: 100vh;
+  background-color: var(--color6);
+  color: var(--color4);
+}
+
+header {
+  grid-area: header;
+  background-color: var(--color5);
+  padding-inline: 15px;
+  color: var(--color6);
+  align-content: center;
+}
+
+nav {
+  grid-area: nav;
+  background-color: var(--color4);
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+nav > a {
+  text-decoration: none;
+  color: var(--color6);
+  padding: 3%;
+}
+
+nav > a:hover {
+  text-shadow: 1px 1px var(--color4);
+  background-color: var(--color5);
+}
+
+main {
+  background-color: var(--color6);
+  border: 2;
+  padding: 1em;
+  grid-area: main;
+}
+
+footer {
+  background-color: var(--color4);
+  grid-area: footer;
+}
+
+aside {
+  background-color: var(--bordes-filtros);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+#encabezado_categorias {
+  background-color: rgb(209, 148, 120);
+  padding: 0.4em;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+aside > .filtros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.filtro_custom {
+  background-color: var(--bordes-filtros);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filtro_custom:active,
+.filtro_custom:focus,
+.filtro_custom:hover {
+  background-color: var(--backround-filtros);
+  box-shadow: 0 2px var(--bordes-filtros);
+}
+#boton_aplicar {
+  background-color: var(--bordes-filtros);
+  border: 1px solid var(--bordes-filtros);
+  margin: 10%;
+  cursor: pointer;
+  box-shadow: 2px 2px rgb(53, 53, 53);
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+#boton_aplicar:active {
+  box-shadow: 2px 2px rgb(53, 53, 53) inset;
+  background-color: var(--backround-filtros);
+}

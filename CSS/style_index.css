@@ -1,0 +1,64 @@
+/*Estructura de Index.html*/
+:root {
+  font-family: Arial;
+  --color1: rgb(235, 94, 165);
+  --color2: rgb(235 94 94);
+  --color3: rgb(220, 158, 130);
+  --color4: rgb(41, 47, 54);
+  --color5: rgb(94, 164, 235);
+  --color6: rgb(247, 255, 247);
+}
+body {
+  margin: 0em 1em 0em 1em;
+  background-color: var(--color6);
+  display: grid;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header nav"
+    "main main main"
+    "footer footer footer";
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--color5);
+  padding-inline: 15px;
+  color: var(--color6);
+  align-content: center;
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+  background-color: var(--color4);
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+nav > a {
+  text-decoration: none;
+  color: var(--color6);
+  padding: 3%;
+}
+
+nav > a:hover {
+  text-shadow: 1px 1px var(--color4);
+  background-color: var(--color5);
+}
+
+main {
+  background-color: var(--color6);
+  border: 2;
+  padding: 1em;
+  grid-area: main;
+}
+
+footer {
+  background-color: var(--color4);
+  grid-area: footer;
+}

@@ -4,41 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Información - Proyectos Educativo S.A</title>
+    <link rel="stylesheet" href="CSS/style_proyectos.css" />
   </head>
   <body>
     <header>
-      <h1>Buscador de Proyectos</h1>
-      <section>
-        <label for="Buscador">Buscador:</label>
-        <input type="text" name="Buscador" />
-      </section>
-      <aside>
-        <h2>Filtros</h2>
-        <h4>Categoria:</h4>
-        <label for="Tutorias">Tutorias</label>
-        <input type="checkbox" name="Tutorias" id="" />
-        <label for="Comedores">Comedores</label>
-        <input type="checkbox" name="Comedores" id="" />
-        <label for="Colecta">Colecta</label>
-        <input type="checkbox" name="Colecta" id="" />
-        <h4>Año:</h4>
-        <input type="date" name="" id="" />
-        <h4>Estado:</h4>
-        <input type="button" value="Finalizado" />
-        <input type="button" value="En Curso" />
-      </aside>
-      <div>
-        <br />
-        <a href="#"><</a>
-        <a href="">1</a>
-        <a href="">2</a>
-        <a href="">3</a>
-        <a href="">4</a>
-        <a href="">5</a>
-        <a href="#">></a>
-      </div>
+      <h1>Proyectos Educativos S.A</h1>
     </header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html"> Todos nuestros proyectos</a>
+      <a href="perfil.html">Nuestro equipo</a>
+    </nav>
+    <aside>
+      <div id="encabezado_categorias">Categorias</div>
+      <div class="filtros">
+        <button class="filtro_custom">Taller</button>
+        <button class="filtro_custom">Recolecta</button>
+        <button class="filtro_custom">Lota</button>
+        <button class="filtro_custom">Comedor</button>
+      </div>
+      <div id="encabezado_categorias">Año</div>
+      <div class="filtros">
+        <button class="filtro_custom">2026</button>
+        <button class="filtro_custom">2025</button>
+        <button class="filtro_custom">2024</button>
+        <button class="filtro_custom">2023</button>
+        <button class="filtro_custom">2022</button>
+      </div>
+      <div id="encabezado_categorias">Estado</div>
+      <div class="filtros">
+        <button class="filtro_custom">Terminado</button>
+        <button class="filtro_custom">En curso</button>
+      </div>
+      <div class="aplicar_filtro">
+        <button id="boton_aplicar">Aplicar Filtros</button>
+      </div>
+    </aside>
     <main>
+      <h1>Buscador de Proyectos</h1>
       <ul>
         <li>
           <article>
@@ -117,5 +120,6 @@
         </li>
       </ul>
     </main>
+    <footer><p></p></footer>
   </body>
 </html>
