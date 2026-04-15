@@ -117,3 +117,6 @@ aside > .filtros {
   box-shadow: 2px 2px rgb(53, 53, 53) inset;
   background-color: var(--backround-filtros);
 }
+
+head {
+}
