@@ -1,18 +1,18 @@
 /*Estructura de Index.html*/
 :root {
   font-family: Arial;
-  --color1: rgb(235, 94, 165);
-  --color2: rgb(235 94 94);
-  --color3: rgb(220, 158, 130);
-  --color4: rgb(41, 47, 54);
-  --color5: rgb(94, 164, 235);
-  --color6: rgb(247, 255, 247);
+  --Rosa: rgb(235, 94, 165);
+  --Rojo: rgb(235 94 94);
+  --Naranja: rgb(220, 158, 130);
+  --Negro: rgb(41, 47, 54);
+  --Celeste: rgb(94, 164, 235);
+  --Blanco: rgb(247, 255, 247);
+  --Gris: rgb(214, 219, 224);
 }
 body {
-  margin: 0em 1em 0em 1em;
-  background-color: var(--color6);
-  display: grid;
   margin: 0;
+  background-color: var(--Negro);
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
@@ -23,45 +23,96 @@ body {
 }
 
 header {
-  background-color: var(--color5);
+  background-color: var(--Celeste);
   padding-inline: 15px;
-  color: var(--color6);
+  color: var(--Blanco);
   align-content: center;
+  text-shadow: 1px 1px var(--Negro);
   grid-area: header;
 }
 
 nav {
   grid-area: nav;
-  background-color: var(--color4);
+  background-color: var(--Celeste);
   display: flex;
-  flex-grow: 1;
-  flex-shrink: 0;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 nav > a {
+  padding-left: 5px;
+  flex-grow: 1;
+  background-color: var(--Negro);
   text-decoration: none;
-  color: var(--color6);
-  padding: 3%;
+  color: var(--Blanco);
+  align-content: center;
+}
+
+nav > a:nth-child(1) {
+  background-color: var(--Celeste);
+  text-shadow: 1px 1px var(--Negro);
 }
 
 nav > a:hover {
-  text-shadow: 1px 1px var(--color4);
-  background-color: var(--color5);
+  text-shadow: 1px 1px var(--Negro);
+  background-color: var(--Celeste);
 }
 
 main {
-  background-color: var(--color6);
-  border: 2;
-  padding: 1em;
+  background-color: var(--Blanco);
+  padding: 0.5em;
   grid-area: main;
 }
 
 footer {
-  background-color: var(--color4);
+  background-color: var(--Negro);
   grid-area: footer;
 }
 
-head {
+/* Estructura del Contenido */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: dashed, 3px, var(--Rosa);
+}
+th {
+  border: solid 3px var(--Rosa);
+  background-color: var(--Rosa);
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+td > ul,
+ol {
+  padding-left: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Flex de Main*/
+main {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  margin-top: 1px;
+}
+
+article,
+section {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: var(--Gris);
+  height: 1fr;
+}
+
+#tabla_info {
+  background-color: var(--Blanco);
 }

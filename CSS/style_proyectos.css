@@ -1,113 +1,154 @@
+/*  Estructura General de las paginas
+    Se necesita que sean iguales en todas las paginas (si se puede)
+*/
+
 :root {
   font-family: Arial;
-  --backround-filtros: rgb(229, 184, 164);
-  --bordes-filtros: rgb(220, 158, 130);
-  --color1: rgb(235, 94, 165);
-  --color2: rgb(235 94 94);
-  --color3: rgb(220, 158, 130);
-  --color4: rgb(41, 47, 54);
-  --color5: rgb(94, 164, 235);
-  --color6: rgb(247, 255, 247);
+  --luz-filtros: rgb(229, 184, 164);
+  --base-filtros: rgb(220, 158, 130);
+  --oscuro-filtros: rgb(209, 148, 120);
+  --Rosa: rgb(235, 94, 165);
+  --Rojo: rgb(235 94 94);
+  --Naranja: rgb(220, 158, 130);
+  --Negro: rgb(41, 47, 54);
+  --Celeste: rgb(94, 164, 235);
+  --Blanco: rgb(247, 255, 247);
+  --Gris: rgb(214, 219, 224);
 }
 
 body {
   display: grid;
   margin: 0;
-  grid-template-columns: minmax(10px, 0.5fr) 1fr 1fr;
+  grid-template-columns: minmax(20%, 0.3fr) 1fr 33%;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header nav"
     "aside main main"
     "footer footer footer";
   min-height: 100vh;
-  background-color: var(--color6);
-  color: var(--color4);
+  background-color: var(--Blanco);
+  color: var(--Negro);
 }
 
 header {
-  grid-area: header;
-  background-color: var(--color5);
+  background-color: var(--Celeste);
   padding-inline: 15px;
-  color: var(--color6);
+  color: var(--Blanco);
   align-content: center;
+  text-shadow: 1px 1px var(--Negro);
+  grid-area: header;
 }
 
 nav {
   grid-area: nav;
-  background-color: var(--color4);
+  background-color: var(--Celeste);
   display: flex;
   flex-grow: 1;
-  flex-shrink: 0;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 nav > a {
+  height: 110%;
+  padding: 2%;
+  background-color: var(--Negro);
   text-decoration: none;
-  color: var(--color6);
-  padding: 3%;
+  color: var(--Blanco);
+  align-content: center;
+}
+
+nav > a:nth-child(2) {
+  background-color: var(--Celeste);
+  text-shadow: 1px 1px var(--Negro);
 }
 
 nav > a:hover {
-  text-shadow: 1px 1px var(--color4);
-  background-color: var(--color5);
+  text-shadow: 1px 1px var(--Negro);
+  background-color: var(--Celeste);
 }
 
 main {
-  background-color: var(--color6);
+  background-color: var(--Blanco);
   border: 2;
   padding: 1em;
   grid-area: main;
 }
 
 footer {
-  background-color: var(--color4);
+  background-color: var(--Negro);
   grid-area: footer;
 }
+footer > p {
+  color: var(--Blanco);
+  padding-left: 1px;
+  margin: 1px;
+}
+
+/* Estructura De Los filtros*/
 
 aside {
-  background-color: var(--bordes-filtros);
+  background-color: var(--base-filtros);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  flex-grow: 1;
   gap: 0.5em;
+}
+aside > div:first-child {
+  background-color: var(--oscuro-filtros);
+  font-style: bold;
+  padding: 0.4em;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
 #encabezado_categorias {
-  background-color: rgb(209, 148, 120);
+  background-color: var(--oscuro-filtros);
   padding: 0.4em;
   font-size: 1.3rem;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 aside > .filtros {
   display: flex;
+  flex: 0 1 0;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5em;
 }
 
+/* Botones */
 .filtro_custom {
-  background-color: var(--bordes-filtros);
+  appearance: none;
+  background-color: var(--base-filtros);
   border: none;
-  font-size: 16px;
+  color: var(--Negro);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.filtro_custom > label {
+  display: flex;
+  align-content: center;
+  background-color: var(--base-filtros);
+  color: var(--Negro);
+  font-size: 0.9rem;
   cursor: pointer;
 }
 
 .filtro_custom:active,
 .filtro_custom:focus,
 .filtro_custom:hover {
-  background-color: var(--backround-filtros);
-  box-shadow: 0 2px var(--bordes-filtros);
+  background-color: var(--luz-filtros);
+  box-shadow: 0 2px var(--base-filtros);
 }
 #boton_aplicar {
-  background-color: var(--bordes-filtros);
-  border: 1px solid var(--bordes-filtros);
+  background-color: var(--base-filtros);
+  border: 1px solid var(--base-filtros);
   margin: 10%;
   cursor: pointer;
-  box-shadow: 2px 2px rgb(53, 53, 53);
+  box-shadow: 2px 2px var(--Negro);
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -115,8 +156,31 @@ aside > .filtros {
 
 #boton_aplicar:active {
   box-shadow: 2px 2px rgb(53, 53, 53) inset;
-  background-color: var(--backround-filtros);
+  background-color: var(--luz-filtros);
 }
 
-head {
+/* Estrctura del contenido*/
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main > h1 {
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  background-color: var(--Gris);
+}
+article {
+  flex-grow: 1;
+  background-color: var(--Gris);
+  padding: 15px;
+}
+article > h2 {
+  margin-top: 10px;
+}
+
+#tabla_info {
+  background-color: var(--Blanco);
 }
