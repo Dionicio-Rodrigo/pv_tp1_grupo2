@@ -1,0 +1,161 @@
+
+:root {
+  font-family: Arial;
+  --luz-filtros: rgb(229, 184, 164);
+  --base-filtros: rgb(220, 158, 130);
+  --oscuro-filtros: rgb(209, 148, 120);
+  --Rosa:    rgb(235, 94, 165);
+  --Rojo:    rgb(235, 94, 94);
+  --Naranja: rgb(220, 158, 130);
+  --Negro:   rgb(41, 47, 54);
+  --Celeste: rgb(94, 164, 235);
+  --Blanco:  rgb(247, 255, 247);
+  --Gris:    rgb(214, 219, 224);
+}
+
+body {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header header nav"
+    "main   main   main"
+    "main   main   main"
+    "footer footer footer";
+  min-height: 100vh;
+  background-color: var(--Blanco);
+  color: var(--Negro);
+}
+
+header {
+  background-color: var(--Celeste);
+  padding-inline: 15px;
+  color: var(--Blanco);
+  align-content: center;
+  text-shadow: 1px 1px var(--Negro);
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+  background-color: var(--Celeste);
+  display: flex;
+  flex-direction: column;
+}
+
+nav > a {
+  padding: 10px;
+  background-color: var(--Negro);
+  text-decoration: none;
+  color: var(--Blanco);
+}
+
+nav > a:nth-child(3) {
+  background-color: var(--Celeste);
+  text-shadow: 1px 1px var(--Negro);
+}
+
+main {
+  background-color: var(--Blanco);
+  padding: 1em;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+footer {
+  background-color: var(--Negro);
+  grid-area: footer;
+  padding: 10px;
+}
+
+footer > p {
+  color: var(--Blanco);
+  margin: 0;
+}
+
+
+#seccion-perfil > h2 {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  background-color: var(--Gris);
+}
+
+#perfil-martin {
+  background-color: var(--Gris);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+#encabezado-perfil {
+  background-color: var(--Negro);
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  padding: 1.2em;
+  border-radius: 4px;
+}
+
+#encabezado-perfil img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--Celeste);
+}
+
+#informacion-personal, #proyectos-usuario, #nuevo-mensaje {
+  background-color: var(--Blanco);
+  padding: 1em;
+  border-radius: 4px;
+}
+
+
+.entrada-texto {
+  width: 100%;
+  padding: 8px;
+  border: 1.5px solid var(--Gris);
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.area-mensaje {
+  width: 100%;
+  padding: 8px;
+  border: 1.5px solid var(--Gris);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  height: 100px;
+}
+
+.boton-enviar {
+  padding: 10px 20px;
+  background-color: var(--base-filtros);
+  border: 1px solid var(--base-filtros);
+  color: var(--Negro);
+  cursor: pointer;
+  box-shadow: 2px 2px var(--Negro);
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.boton-enviar:hover {
+  background-color: var(--luz-filtros);
+}
+
+fieldset {
+  border: 1.5px solid var(--Gris);
+  border-radius: 4px;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--Celeste);
+}
