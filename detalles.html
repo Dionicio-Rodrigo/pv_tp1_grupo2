@@ -1,46 +1,96 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nombre del Proyecto - PE</title>
-  </head>
-  <body>
-    <header>
-      <h1>Nombre del Proyecto</h1>
-      <p>
-        Fecha de Inicio/Finalización: <br />
-        Autores:
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de SQL - Proyectos Educativos S.A</title>
+  <link rel="stylesheet" href="CSS/style_detalles.css" >
+</head>
+<body>
+  <header>
+    <h1>Proyectos Educativos S.A</h1>
+  </header>
+
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="proyectos.html" class="navact"> Todos nuestros proyectos</a>
+    <a href="perfil.html">Nuestro equipo</a>
+  </nav>
+
+  <main> 
+    <a class="volver" href="proyectos.html">Volver a proyectos</a>
+
+    <article id="encabezado_pr">
+      <h2>Taller de SQL</h2>
+      <p class="fechas">
+        <strong>Fecha de inicio:</strong> 01/03/2025 | <strong>Fecha de finalización:</strong> 30/06/2025
       </p>
-    </header>
-    <main>
-      <article>
-        <h2>Descripcion</h2>
-        <p>Objetivos,etc</p>
-      </article>
+      <p>
+        <strong>Autores:</strong> Rodrigo Dionicio, Rita Cruz Benavidez, Leonel Aramayo
+      </p>
+    </article>
+
+    <article id="descripcion">
+      <h2>Descripción</h2>
+      <p>
+        El Taller de SQL es un proyecto educativo orientado a estudiantes de la Facultad de
+        Ingeniería que deseen fortalecer sus habilidades en el manejo de bases de datos
+        relacionales.
+      </p>
+      <p>
+        Al finalizar el taller, cada participante habrá completado un proyecto integrador 
+        que simula un caso de uso profesional.
+      </p>
+    </article>
+
+    <section id="recursos">
+      <h2>Recursos</h2>
       <ul>
-        <h3>Recursos</h3>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><a href="#">Guía de ejercicios SQL - Nivel Inicial (PDF)</a></li>
+        <li><a href="#" >Repositorio del proyecto en GitHub</a></li>
+        <li><a href="#">Material de apoyo en Google Drive</a></li>
+        <li><a href="#" >Grabaciones de las clases (Drive)</a></li>
       </ul>
-      <section>
-        <h3>Equipo</h3>
-        <table>
+    </section>
+
+    <section id="equipo">
+      <h2>Equipo</h2>
+      <table>
+        <thead>
           <tr>
             <th>Nombre</th>
             <th>Rol</th>
           </tr>
+        </thead>
+        <tbody>
           <tr>
-            <td>Maria</td>
-            <td>Profesora</td>
+            <td>Lucas Lautaro Mamani</td>
+            <td>Alumno</td>
+          </tr>
+            <tr>
+            <td>Lucas Dario Joaquin Mamani</td>
+            <td>Alumno</td>
           </tr>
           <tr>
-            <td>Nombre</td>
-            <td>Rol</td>
+            <td>Rodrigo Ezequiel Dionicio</td>
+            <td>Alumno</td>
           </tr>
-        </table>
-      </section>
-    </main>
-  </body>
+          <tr>
+            <td>Rita Melina Cruz Benavidez</td>
+            <td>Alumno</td>
+          </tr>
+          <tr>
+            <td>Leonel Maximiliano Aramayo Estrada</td>
+            <td>Alumno</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyectos Educativos S.A 2026 — Facultad de Ingeniería</p>
+  </footer>
+</body>
 </html>
