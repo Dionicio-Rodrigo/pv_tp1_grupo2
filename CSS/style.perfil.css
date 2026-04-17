@@ -51,8 +51,12 @@ nav > a {
   text-decoration: none;
   color: var(--Blanco);
 }
+nav > a:hover {
+  text-shadow: 1px 1px var(--Negro);
+  background-color: var(--Celeste);
+}
 
-nav > a:nth-child(3) {
+.navact {
   background-color: var(--Celeste);
   text-shadow: 1px 1px var(--Negro);
 }

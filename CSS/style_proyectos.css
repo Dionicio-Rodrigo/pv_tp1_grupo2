@@ -56,7 +56,7 @@ nav > a {
   color: var(--Blanco);
 }
 
-nav > a:nth-child(2) {
+.navact {
   background-color: var(--Celeste);
   text-shadow: 1px 1px var(--Negro);
 }
@@ -90,10 +90,9 @@ aside {
   background-color: var(--base-filtros);
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  flex-grow: 1;
   gap: 0.5em;
 }
+
 aside > div:first-child {
   background-color: var(--oscuro-filtros);
   font-style: bold;
