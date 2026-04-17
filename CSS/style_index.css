@@ -10,6 +10,7 @@
   color: var(--Negro);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
   margin: 0;
   background-color: var(--Blanco);
@@ -75,6 +76,14 @@ footer > p {
 }
 
 /* Estructura de la Tabla */
+
+#tabla_info {
+  background-color: var(--Blanco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 table {
   border-collapse: collapse;
   margin-bottom: 1em;
@@ -107,6 +116,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 h2 {
   margin-top: 1%;
   padding-bottom: 0.5em;
@@ -121,11 +131,9 @@ section {
   background-color: var(--Gris);
   height: 1fr;
 }
-
-#tabla_info {
-  background-color: var(--Blanco);
+ul {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  align-items: center;
+  gap: 10px;
+  gap: 10px;
 }
