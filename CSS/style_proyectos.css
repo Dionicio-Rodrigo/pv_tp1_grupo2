@@ -109,6 +109,7 @@ aside > div:first-child {
   font-size: 1.3rem;
   text-align: center;
 }
+
 aside > .filtros {
   display: flex;
   flex-direction: row;
@@ -126,6 +127,7 @@ aside > .filtros {
   font-size: 1rem;
   cursor: pointer;
 }
+
 .filtro_custom > label {
   display: flex;
   align-content: center;
@@ -163,6 +165,7 @@ main {
   flex-direction: column;
   gap: 1em;
 }
+
 main > h1 {
   margin: 0;
   padding: 1em;
@@ -171,16 +174,32 @@ main > h1 {
   background-color: var(--Gris);
   border-radius: 4px;
 }
+
 article {
   border-radius: 4px;
   flex-grow: 1;
   background-color: var(--Gris);
-  padding: 15px;
-}
-article > h2 {
-  margin-top: 10px;
+  padding: 10px;
 }
 
-#tabla_info {
-  background-color: var(--Blanco);
+article > h2 {
+  margin-top: 10px;
+  justify-self: center;
+}
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px;
+  grid-auto-rows: auto;
+  overflow: hidden;
+  place-items: center;
+}
+section > div {
+  align-self: flex-start;
+}
+
+img {
+  border-radius: 5px;
+  max-width: 90%;
+  max-width: 90%;
 }
