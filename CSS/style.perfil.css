@@ -1,16 +1,16 @@
-
 :root {
-  font-family: Arial;
   --luz-filtros: rgb(229, 184, 164);
   --base-filtros: rgb(220, 158, 130);
   --oscuro-filtros: rgb(209, 148, 120);
-  --Rosa:    rgb(235, 94, 165);
-  --Rojo:    rgb(235, 94, 94);
+  --Rosa: rgb(235, 94, 165);
+  --Rojo: rgb(235, 94, 94);
   --Naranja: rgb(220, 158, 130);
-  --Negro:   rgb(41, 47, 54);
+  --Negro: rgb(41, 47, 54);
   --Celeste: rgb(94, 164, 235);
-  --Blanco:  rgb(247, 255, 247);
-  --Gris:    rgb(214, 219, 224);
+  --Blanco: rgb(247, 255, 247);
+  --Gris: rgb(214, 219, 224);
+  color: var(--Negro);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -45,7 +45,8 @@ nav {
 }
 
 nav > a {
-  padding: 10px;
+  padding: 0.5em;
+  flex-grow: 1;
   background-color: var(--Negro);
   text-decoration: none;
   color: var(--Blanco);
@@ -60,9 +61,6 @@ main {
   background-color: var(--Blanco);
   padding: 1em;
   grid-area: main;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
 }
 
 footer {
@@ -75,7 +73,6 @@ footer > p {
   color: var(--Blanco);
   margin: 0;
 }
-
 
 #seccion-perfil > h2 {
   margin: 0;
@@ -108,19 +105,20 @@ footer > p {
   border: 3px solid var(--Celeste);
 }
 
-#informacion-personal, #proyectos-usuario, #nuevo-mensaje {
+#informacion-personal,
+#proyectos-usuario,
+#nuevo-mensaje {
   background-color: var(--Blanco);
   padding: 1em;
   border-radius: 4px;
 }
-
 
 .entrada-texto {
   width: 100%;
   padding: 8px;
   border: 1.5px solid var(--Gris);
   border-radius: 4px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   margin-top: 5px;
   margin-bottom: 10px;
 }

@@ -3,7 +3,6 @@
 */
 
 :root {
-  font-family: Arial;
   --luz-filtros: rgb(229, 184, 164);
   --base-filtros: rgb(220, 158, 130);
   --oscuro-filtros: rgb(209, 148, 120);
@@ -14,12 +13,14 @@
   --Celeste: rgb(94, 164, 235);
   --Blanco: rgb(247, 255, 247);
   --Gris: rgb(214, 219, 224);
+  color: var(--Negro);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   display: grid;
   margin: 0;
-  grid-template-columns: minmax(20%, 0.3fr) 1fr 33%;
+  grid-template-columns: minmax(120px, 15%) 1fr 33%;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header nav"
@@ -48,12 +49,11 @@ nav {
 }
 
 nav > a {
-  height: 110%;
-  padding: 2%;
+  padding: 0.5em;
+  flex-grow: 1;
   background-color: var(--Negro);
   text-decoration: none;
   color: var(--Blanco);
-  align-content: center;
 }
 
 nav > a:nth-child(2) {
@@ -74,13 +74,14 @@ main {
 }
 
 footer {
+  padding: 0.5em;
   background-color: var(--Negro);
   grid-area: footer;
 }
+
 footer > p {
   color: var(--Blanco);
-  padding-left: 1px;
-  margin: 1px;
+  margin: 0;
 }
 
 /* Estructura De Los filtros*/
@@ -107,12 +108,10 @@ aside > div:first-child {
   background-color: var(--oscuro-filtros);
   padding: 0.4em;
   font-size: 1.3rem;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 aside > .filtros {
   display: flex;
-  flex: 0 1 0;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -125,7 +124,7 @@ aside > .filtros {
   background-color: var(--base-filtros);
   border: none;
   color: var(--Negro);
-  font-size: 0.9rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 .filtro_custom > label {
@@ -171,8 +170,10 @@ main > h1 {
   display: flex;
   justify-content: center;
   background-color: var(--Gris);
+  border-radius: 4px;
 }
 article {
+  border-radius: 4px;
   flex-grow: 1;
   background-color: var(--Gris);
   padding: 15px;
