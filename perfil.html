@@ -1,52 +1,69 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Equipo - Proyectos Educativos S.A</title>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="CSS/style.perfil.css">
+</head>
+<body>
+
     <header>
-      <h1>Nuestro Equipo</h1>
+        <h1>Proyectos Educativos S.A</h1>
     </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="perfil.html">Mi perfil</a>
+    </nav>
+
     <main>
-      <ul>
-        <li>
-          <img src="" alt="" />
-          <p>
-            Nombre: <br />
-            Rol:
-          </p>
-        </li>
-        <li>
-          <img src="" alt="" />
-          <p>
-            Nombre: <br />
-            Rol:
-          </p>
-        </li>
-        <li>
-          <img src="" alt="" />
-          <p>
-            Nombre: <br />
-            Rol:
-          </p>
-        </li>
-        <li>
-          <img src="" alt="" />
-          <p>
-            Nombre: <br />
-            Rol:
-          </p>
-        </li>
-        <li>
-          <img src="" alt="" />
-          <p>
-            Nombre: <br />
-            Rol:
-          </p>
-        </li>
-      </ul>
+        <section id="seccion-perfil">
+            <h2>Mi Perfil</h2>
+
+            <article id="perfil-martin">
+                <header id="encabezado-perfil">
+                    <img src="profilepic.png" alt="Perfil" width="100">
+                    <div>
+                        <h3>Martinandez2</h3>
+                        <p>Alumno</p>
+                    </div>
+                </header>
+
+                <section id="informacion-personal">
+                    <h4>Información Personal</h4>
+                    <form>
+                        <label>Nombre Completo:</label>
+                        <input type="text" class="entrada-texto" value="Martin Fernandez">
+
+                        <label>DNI:</label>
+                        <input type="text" class="entrada-texto" value="46.369.852">
+
+                        <label>Correo:</label>
+                        <input type="email" class="entrada-texto" value="martin.fernandez@unju.edu.ar">
+
+                        <button type="button" class="boton-enviar">Actualizar Perfil</button>
+                    </form>
+                </section>
+
+                <section id="nuevo-mensaje">
+                    <h4>Nuevo Mensaje</h4>
+                    <form>
+                        <label>Asunto:</label>
+                        <input type="text" class="entrada-texto" >
+
+                        <label>Mensaje:</label>
+                        <textarea class="area-mensaje" ></textarea>
+                        <button type="button" class="boton-enviar">Enviar Mensaje</button>
+                    </form>
+                </section>
+            </article>
+        </section>
     </main>
-  </body>
+
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
 </html>
