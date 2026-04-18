@@ -1,51 +1,127 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taller de SQL - Sinergia Educativa</title>
-    <link rel="stylesheet" href="CSS/style_detalles.css" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Proyectos - Sinergia Educativa</title>
+    <link rel="stylesheet" href="CSS/style_detalles.css" >
   </head>
   <body>
     <header>
       <h1>Sinergia Educativa</h1>
     </header>
-
+ 
     <nav>
       <a href="index.html">Inicio</a>
-      <a href="proyectos.html"> Proyectos</a>
+      <a href="proyectos.html">Proyectos</a>
       <a href="perfil.html">Mi Perfil</a>
     </nav>
-
+ 
     <main>
       <a class="volver" href="proyectos.html">Volver a proyectos</a>
-
-      <article id="encabezado_pr">
+ 
+      <article class="encabezado_pr">
+        <h2>Sistemas de Riego Automatizados</h2>
+        <p class="fechas">
+          <strong>Fecha de inicio:</strong> 15/03/2023 |
+          <strong>Fecha de finalización:</strong> 20/05/2024
+        </p>
+        <p>
+          <strong>Autores:</strong> Valentina Flores, Emilio Quispe,
+          Brenda Tolaba
+        </p>
+      </article>
+ 
+      <article class="descripcion">
+        <h2>Descripción</h2>
+        <p>
+          Este proyecto consiste en el desarrollo de un prototipo funcional de
+          sistema de riego automatizado para huertas comunitarias, utilizando
+          sensores de humedad del suelo y microcontroladores de código abierto
+          como Arduino. El objetivo principal es optimizar el uso del agua en
+          zonas de escasos recursos, permitiendo que el sistema tome decisiones
+          de riego de forma autónoma según las condiciones reales del terreno.
+        </p>
+        <p>
+          El prototipo fue diseñado para ser replicable con componentes de bajo
+          costo y fácil acceso, facilitando su adopción en comunidades rurales
+          o periurbanas de la región. A lo largo del proyecto se documentaron
+          los esquemas de conexión, el código fuente y los resultados de las
+          pruebas de campo, dejando una base sólida para futuras iteraciones
+          o escalados del sistema.
+        </p>
+      </article>
+ 
+      <section class="recursos">
+        <h2>Recursos</h2>
+        <ul>
+          <li><a href="#">Esquema de conexión del prototipo (PDF)</a></li>
+          <li><a href="#">Código fuente en GitHub</a></li>
+          <li><a href="#">Informe final del proyecto (Drive)</a></li>
+          <li><a href="#">Registro fotográfico de pruebas de campo (Drive)</a></li>
+        </ul>
+      </section>
+ 
+      <section class="equipo">
+        <h2>Equipo</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Rol</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Valentina Alejandra Flores</td>
+              <td>Coordinadora del proyecto</td>
+            </tr>
+            <tr>
+              <td>Emilio Quispe</td>
+              <td>Desarrollo de hardware</td>
+            </tr>
+            <tr>
+              <td>Brenda Tolaba</td>
+              <td>Programación del microcontrolador</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+       <hr>
+     
+       <article class="encabezado_pr">
         <h2>Taller de SQL</h2>
         <p class="fechas">
-          <strong>Fecha de inicio:</strong> 01/03/2025 |
+          <strong>Fecha de inicio:</strong> 01/05/2025 |
           <strong>Fecha de finalización:</strong> 30/06/2026
         </p>
         <p>
           <strong>Autores:</strong> Rodrigo Dionicio, Rita Cruz Benavidez,
-          Leonel Aramayo
+          Leonel Aramayo, Lucas Lautaro Mamani, Lucas Dario Joaquin Mamani
         </p>
       </article>
-
-      <article id="descripcion">
+ 
+      <article class="descripcion">
         <h2>Descripción</h2>
         <p>
           El Taller de SQL es un proyecto educativo orientado a estudiantes de
           la Facultad de Ingeniería que deseen fortalecer sus habilidades en el
-          manejo de bases de datos relacionales.
+          manejo de bases de datos relacionales. Un espacio práctico donde
+          aprenderás a diseñar, crear y consultar bases de datos desde cero,
+          con enfoque en cómo estructurar la información de manera lógica y
+          cómo extraer datos valiosos usando comandos como SELECT, JOIN y
+          GROUP BY para tomar decisiones basadas en datos reales.
         </p>
         <p>
           Al finalizar el taller, cada participante habrá completado un proyecto
-          integrador que simula un caso de uso profesional.
+          integrador que simula un caso de uso profesional, consolidando los
+          conocimientos adquiridos a lo largo de las sesiones y desarrollando
+          competencias directamente aplicables en el ámbito laboral y académico.
         </p>
       </article>
-
-      <section id="recursos">
+ 
+      <section class="recursos">
         <h2>Recursos</h2>
         <ul>
           <li><a href="#">Guía de ejercicios SQL - Nivel Inicial (PDF)</a></li>
@@ -54,8 +130,8 @@
           <li><a href="#">Grabaciones de las clases (Drive)</a></li>
         </ul>
       </section>
-
-      <section id="equipo">
+ 
+      <section class="equipo">
         <h2>Equipo</h2>
         <table>
           <thead>
@@ -67,7 +143,7 @@
           <tbody>
             <tr>
               <td>Lucas Lautaro Mamani</td>
-              <td>Alumno</td>
+              <td>Desarrollo Técnico</td>
             </tr>
             <tr>
               <td>Lucas Dario Joaquin Mamani</td>
@@ -75,23 +151,221 @@
             </tr>
             <tr>
               <td>Rodrigo Ezequiel Dionicio</td>
-              <td>Alumno</td>
+              <td>Administración de Repositorios</td>
             </tr>
             <tr>
               <td>Rita Melina Cruz Benavidez</td>
-              <td>Alumno</td>
+              <td>Tutoría Académica</td>
             </tr>
             <tr>
               <td>Leonel Maximiliano Aramayo Estrada</td>
-              <td>Alumno</td>
+              <td>Gestión de Contenidos</td>
             </tr>
           </tbody>
         </table>
       </section>
-    </main>
+ 
+      <hr>
+ 
+      <article class="encabezado_pr">
+        <h2>Nutrición con Energía</h2>
+        <p class="fechas">
+          <strong>Fecha de inicio:</strong> 10/03/2024 |
+          <strong>Fecha de finalización:</strong> En curso
+        </p>
+        <p>
+          <strong>Autores:</strong> Andrea Yapura, Facundo Chauque,
+          Miriam Gallardo
+        </p>
+      </article>
+ 
+      <article class="descripcion">
+        <h2>Descripción</h2>
+        <p>
+          El proyecto Nutrición con Energía es una iniciativa de economía circular gestionada íntegramente por estudiantes, diseñada para combatir la inseguridad alimentaria mediante la provisión de almuerzos balanceados a precios accesibles. Su pilar fundamental es un sistema de reservaciones digital, desarrollado por los propios alumnos, que permite predecir la demanda exacta de cada jornada, eliminando la incertidumbre en las compras y reduciendo el desperdicio de alimentos a prácticamente cero.
+        </p>
+        <p>
+         Al integrar tecnología propia con una logística de aprovechamiento de alimentos, el espacio no solo funciona como un comedor, sino como un laboratorio de ingenio para garantizar nutricion solidaria a lacomunidad universitaria sin generar grandes gastos.
+        </p>
+      </article>
+ 
+      <section class="recursos">
+        <h2>Recursos</h2>
+        <ul>
+          <li><a href="#">Sistema de reservaciones - Manual de uso (PDF)</a></li>
+          <li><a href="#">Repositorio del sistema en GitHub</a></li>
+          <li><a href="#">Planillas de seguimiento nutricional (Drive)</a></li>
+          <li><a href="#">Acta de acuerdo con el comedor universitario (Drive)</a></li>
+        </ul>
+      </section>
+ 
+      <section class="equipo">
+        <h2>Equipo</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Rol</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Andrea Yapura</td>
+              <td>Coordinadora general e inclusión</td>
+            </tr>
+            <tr>
+              <td>Facundo Chauque</td>
+              <td>Logística de insumos</td>
+            </tr>
+            <tr>
+              <td>Miriam Gallardo</td>
+              <td>Diseño del sistema rotativo</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+ 
+      <hr>
+ 
+      <article class="encabezado_pr">
+        <h2>Lotería Universitaria "Probabilidad en Acción"</h2>
+        <p class="fechas">
+          <strong>Fecha de inicio:</strong> 01/09/2025 |
+          <strong>Fecha de finalización:</strong> 15/10/2026
+        </p>
+        <p>
+          <strong>Autores:</strong> Nicolás Herrera, Jimena Cabrera, Tomás Arroyo, Dante Vilca
+        </p>
+      </article>
+ 
+      <article class="descripcion">
+        <h2>Descripción</h2>
+        <p>
+          La Lotería Universitaria "Probabilidad en Acción" es una iniciativa organizada por los estudiantes con el objetivo de recaudar fondos para mejorar el equipamiento y los materiales de los laboratorios. Lo que hace especial a este proyecto es que los propios alumnos desarrollan el software encargado del sorteo, utilizando algoritmos que aseguran que la selección de los ganadores sea totalmente aleatoria, justa y transparente para todos los participantes.
 
+
+        </p>
+        <p>
+      Además de la parte tecnológica, el proyecto incluye un análisis matemático para definir los precios de los números y el valor de los premios de manera equilibrada. De esta forma, los estudiantes logran aplicar sus conocimientos de programación y estadística en una actividad práctica que beneficia a toda la facultad, permitiendo que la institución cuente con mejores recursos gracias al trabajo colaborativo.
+        </p>
+      </article>
+ 
+      <section class="recursos">
+        <h2>Recursos</h2>
+        <ul>
+          <li><a href="#">Código fuente del software de sorteo (GitHub)</a></li>
+          <li><a href="#">Informe de estudio de probabilidades (PDF)</a></li>
+          <li><a href="#">Reglamento de la lotería (Drive)</a></li>
+          <li><a href="#">Rendición de cuentas y destino de fondos (Drive)</a></li>
+        </ul>
+      </section>
+ 
+      <section class="equipo">
+        <h2>Equipo</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Rol</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nicolás Herrera</td>
+              <td>Coordinador y administración de fondos</td>
+            </tr>
+            <tr>
+              <td>Jimena Cabrera</td>
+              <td>Diseño y venta de boletos</td>
+            </tr>
+            <tr>
+              <td>Tomás Arroyo</td>
+              <td>Selección y gestión de premios</td>
+            </tr>
+            <tr>
+              <td>Dante Vilca</td>
+              <td>Estudio de probabilidades y estadística</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+ 
+      <hr>
+ 
+      <article class="encabezado_pr">
+        <h2>Impresión 3D y Prototipado Rápido</h2>
+        <p class="fechas">
+          <strong>Fecha de inicio:</strong> 15/09/2024 |
+          <strong>Fecha de finalización:</strong> En curso
+        </p>
+        <p>
+          <strong>Autores:</strong> Lucía Mamani, Rodrigo Condorí,
+           Martin Fernandez
+        </p>
+      </article>
+ 
+      <article class="descripcion">
+        <h2>Descripción</h2>
+        <p>
+          Este espacio de capacitación práctica tiene como objetivo que los
+          estudiantes de ingeniería aprendan a calibrar impresoras FDM y a
+          utilizar software de laminado para convertir sus diseños CAD en
+          modelos físicos reales. El taller cubre desde los conceptos básicos
+          de la tecnología de deposición de material fundido hasta la
+          optimización de parámetros de impresión como temperatura, velocidad,
+          relleno y soportes.
+        </p>
+        <p>
+          A lo largo del taller, cada participante desarrolla al menos un
+          prototipo propio, aplicando el proceso completo: diseño en software
+          CAD, preparación del archivo en el laminador, configuración de la
+          impresora y post-procesado de la pieza. El proyecto busca democratizar
+          el acceso a herramientas de fabricación digital dentro de la facultad,
+          fomentando la cultura del prototipado rápido como metodología de
+          resolución de problemas de ingeniería.
+        </p>
+      </article>
+ 
+      <section class="recursos">
+        <h2>Recursos</h2>
+        <ul>
+          <li><a href="#">Guía de calibración de impresoras FDM (PDF)</a></li>
+          <li><a href="#">Modelos de ejemplo en repositorio (GitHub)</a></li>
+          <li><a href="#">Tutoriales de software de laminado (Drive)</a></li>
+          <li><a href="#">Galería de prototipos realizados (Drive)</a></li>
+        </ul>
+      </section>
+ 
+      <section class="equipo">
+        <h2>Equipo</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Rol</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lucía Mamani</td>
+              <td>Coordinadora del taller</td>
+            </tr>
+            <tr>
+              <td>Rodrigo Condorí</td>
+              <td>Técnico de equipos e impresoras</td>
+            </tr>
+            <tr>
+              <td>Martin Fernandez</td>
+              <td>Instructor de software CAD y laminado</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+ 
+    </main>
+ 
     <footer>
-      <p>© Sinergia Educativa 2026 2026 — Facultad de Ingeniería</p>
+      <p>© Sinergia Educativa 2026 — Facultad de Ingeniería</p>
     </footer>
   </body>
 </html>

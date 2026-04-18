@@ -81,7 +81,7 @@ main {
   content: "← ";
 }
 
-#encabezado_pr {
+.encabezado_pr {
   background-color: var(--Celeste);
   color: var(--Blanco);
   padding: 1.5em;
@@ -90,11 +90,17 @@ main {
 }
 
 article,
-#recursos,
-#equipo {
+.recursos,
+.equipo {
   background-color: var(--Gris);
   padding: 15px;
   border-radius: 4px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--Negro);
+  margin: 1em 0;
 }
 
 h2 {
@@ -104,18 +110,18 @@ h2 {
   margin-bottom: 0.8em;
 }
 
-#recursos ul {
+.recursos ul {
   list-style: none;
   padding: 0;
 }
 
-#recursos li::before {
+.recursos li::before {
   content: "→ ";
   color: var(--Rosa);
   font-weight: bold;
 }
 
-#recursos a {
+.recursos a {
   color: var(--Celeste);
   text-decoration: underline;
   font-weight: bold;
